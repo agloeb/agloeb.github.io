@@ -1,0 +1,81 @@
+/*header style*/
+header {
+    text-align: left;
+}
+
+/*body*/
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('img/strike.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    vertical-align: middle;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+/*main*/
+main {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.flex-container {
+  height: 700px;
+  padding: 0;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.text {
+  width: 600px;
+  font-size: x-large;
+  text-align: justify;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+/*centering*/
+.text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+  text-decoration: none !important;
+  text-decoration-color: none !important;
+}
+
+/*color override*/
+a {
+  text-decoration: none;
+  position: relative;
+}
+a:before {
+  content: '';
+  position: absolute;
+  background-color: rgb(254, 65, 65);
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 3px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+a:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+
+.text-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Bold', Arial, sans-serif;
+  font-size: large;
+  color: whitesmoke;
+}
